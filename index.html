@@ -1,0 +1,58 @@
+﻿<!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>USER DATA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h2 align="center">data</h2>
+        <form id="addForm">
+          <div class="form-group">
+            <label>mac:</label>
+            <input type="string" name="mac" placeholder="input mac address" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>name:</label>
+            <input type="text" name="name" placeholder="input name" class="form-control">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary">save</button>
+          </div>
+        </form>
+        <table class="table table-bordered" id="tbresult">
+        <tr>
+            <th>mac address</th>
+            <th>neme</th>
+            <th>check</th>
+            <th>date</th>
+            <th>...</th>
+        </tr>
+        </table>
+      </div>
+    </body>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7NwXkIl2MoS26MJCUW3Tuu9t-KxmCSOk",
+    authDomain: "database-sniffer.firebaseapp.com",
+    databaseURL: "https://database-sniffer.firebaseio.com",
+    projectId: "database-sniffer",
+    storageBucket: "database-sniffer.appspot.com",
+    messagingSenderId: "365911284779",
+    appId: "1:365911284779:web:77685ce9274dc540cb5e6e",
+    measurementId: "G-LZDTQ7RTN6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js" charset="utf-8"></script>
+</html>
